@@ -1,0 +1,18 @@
+1 the food is lovely
+1 this is a great restaurant
+1 i really enjoyed my food
+1 i enjoyed the experience at the restaurant
+1 we had a lovely meal
+1 my food tasted great
+1 the service was great
+1 what a lovely restaurant
+1 the food the service and the restaurant was great
+-1 the service is terrible
+-1 the food tasted awful
+-1 this is a bad restaurant  
+-1 the food was really bad
+-1 the service and the food was terrible
+-1 we had a terrible experience
+-1 avoid this restaurant
+-1 avoid the food
+-1 the meal was terrible
