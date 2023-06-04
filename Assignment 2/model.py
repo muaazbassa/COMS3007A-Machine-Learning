@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 import tensorflow as tf
 from sklearn.metrics import accuracy_score
 
+
 # Rotate Data Function
 def rotate_data(data, angle):
     rotated_data = np.concatenate((data[:, angle:], data[:, :angle]), axis=1)
@@ -33,6 +34,7 @@ X_train = X_train.to_numpy()
 X_test = X_test.to_numpy()
 y_train = np.ravel(y_train)
 y_test = np.ravel(y_test)
+
 
 # Data augmentation - random perturbations
 augmented_X_train = []
