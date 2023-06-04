@@ -120,7 +120,7 @@ for _ in range(ensemble_size):
 
     # Calculate accuracy
     accuracy = accuracy_score(y_test, y_test_pred)
-    print('Model accuracy:', accuracy)
+    print('Model accuracy: {:.2%}'.format(accuracy))
 
     ensemble.append(model)
 
@@ -133,4 +133,4 @@ y_test_pred = np.argmax(y_test_pred_prob, axis=1)
 
 # Calculate accuracy of the ensemble
 accuracy = accuracy_score(y_test, y_test_pred)
-print('Ensemble accuracy:', accuracy)
+print('Ensemble accuracy: {:.2%}'.format(accuracy))
