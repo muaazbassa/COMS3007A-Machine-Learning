@@ -81,26 +81,21 @@ for _ in range(ensemble_size):
     model = tf.keras.Sequential([
         tf.keras.layers.Dense(64, activation='relu', input_shape=INPUT_SHAPE),
         tf.keras.layers.BatchNormalization(),  # Add batch normalization
-
         tf.keras.layers.Dense(128, activation='relu'),
         tf.keras.layers.BatchNormalization(),  # Add batch normalization
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dropout(0.4),
-
         tf.keras.layers.Dense(256, activation='relu'),  # Additional hidden layer
         tf.keras.layers.BatchNormalization(),  # Add batch normalization
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dropout(0.3),
-
         tf.keras.layers.Dense(128, activation='relu'),  # Additional hidden layer
         tf.keras.layers.BatchNormalization(),  # Add batch normalization
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dropout(0.3),
-
         tf.keras.layers.Dense(64, activation='relu'),  # Additional hidden layer
         tf.keras.layers.BatchNormalization(),  # Add batch normalization
         tf.keras.layers.Flatten(),
-        
         tf.keras.layers.Dense(10, activation='softmax')
     ])
 
