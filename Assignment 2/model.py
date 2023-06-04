@@ -105,7 +105,7 @@ for _ in range(ensemble_size):
     ])
 
     # Define an Adam optimizer with the desired learning rate
-    optimizer = tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE)
+    optimizer = tf.keras.optimizers.Adam(lr=LEARNING_RATE)
 
     model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
